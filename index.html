@@ -150,8 +150,9 @@
             <a href="index.html" class="site-header__brand">
                 <img
                     class="site-header__logo site-header__logo--black"
-                    alt="Kirkland & Ellis LLP"
-                    src="assets/public/images/logo-black edit.svg"
+                    alt="sapphire-and-sage-law-offices"
+                   
+                    src="assets/public/images/logo-no-background.png"
                 />
             </a>
         </div>
@@ -245,47 +246,7 @@
                 </div>
             </nav>
 
-            <form
-                id="site-search"
-                class="site-search wrapper"
-                v-bind:class="{'site-search--expanded': showSiteSearch}"
-                method="get"
-                action="https://www.kirkland.com/search"
-                autocomplete="off"
-                name="Site Search"
-                role="form"
-            >
-                <div class="site-search__body">
-                    <fieldset class="searchbox searchbox__jumbo">
-                        <input
-                            aria-label="Search"
-                            placeholder="Search"
-                            class="searchbox__input"
-                            name="keyword"
-                            v-model="keywordSearchModel"
-                            id="site-search-focus"
-                            autocomplete="off"
-                        />
-                        <button
-                            class="searchbox__button icon-search"
-                            type="submit"
-                            title="Search"
-                        ></button>
-                    </fieldset>
-                    <div
-                        class="site-search__results wrapper"
-                        v-bind:class="{'site-search__results--show': showSiteSearchTypeahead}"
-                    >
-                        <div class="site-search__result-option" v-for="item in siteSearchTypeahead">
-                            <a
-                                v-bind:href="item.Url"
-                                class="site-search__result-link"
-                                v-html="item.Name"
-                            ></a>
-                        </div>
-                    </div>
-                </div>
-            </form>
+           
         </div>
 
         <div
